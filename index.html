@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE PROMISE GROUP | Building the Future</title>
+    <title>ONEPROMISE GROUP | Building the Future</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <div id="particles-container"></div>
+
     <nav>
-        <div class="logo">
-            <span>ONE PROMISE GROUP</span>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <div></div><div></div><div></div>
         </div>
 
-        <div class="hamburger" onclick="toggleMobileMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="logo">
+            <span>ONEPROMISE GROUP</span>
         </div>
-        
+      
+        <div class="nav-right">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="themeToggle">
+                    <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
         <ul class="nav-links" id="nav-links">
+            <li class="menu-header">
+                <span class="close-btn" onclick="toggleMobileMenu()">&times;</span>
+            </li>
             <li><a href="#founders" onclick="closeMenu()">Leadership</a></li>
-            
+            <li><a href="#projects" onclick="closeMenu()">Upcoming Projects</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event)">Contact Us &#9662;</a>
                 <div class="dropdown-content" id="contactDropdown">
@@ -31,26 +43,16 @@
                 </div>
             </li>
         </ul>
-        
-        <div class="nav-extras">
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="themeToggle">
-                    <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </div>
     </nav>
 
     <section class="hero">
         <video autoplay muted loop playsinline class="hero-bg-video">
             <source src="BG.mp4" type="video/mp4">
         </video>
-
         <div class="hero-content">
             <h1>ONEPROMISE GROUP</h1>
             <p>"Where one promise defines everything"</p>
-            <button class="btn">Get Started</button>
+            <a href="#contact" class="btn">Get Started</a>
         </div>
     </section>
 
@@ -58,7 +60,7 @@
         <div class="card" style="max-width: 800px; margin: 0 auto; text-align: justify;">
             <h2 class="section-title" style="text-align: center;">About Company</h2>
             <p>
-                ONE PROMISE GROUP is a leading real estate consultancy firm dedicated to providing luxury residential and commercial spaces. Our mission is to build the future with sustainable and innovative solutions. We pride ourselves on delivering exceptional value to our clients by combining industry expertise, cutting-edge technology, and a commitment to excellence.
+                ONEPROMISE GROUP is a leading real estate consultancy firm dedicated to providing luxury residential and commercial spaces. Our mission is to build the future with sustainable and innovative solutions. We pride ourselves on delivering exceptional value to our clients by combining industry expertise, cutting-edge technology, and a commitment to excellence.
             </p>
         </div>
     </section>
@@ -67,29 +69,20 @@
         <h2 class="section-title">TRUSTED PARTNERS</h2>
         <div class="marquee-container">
             <div class="marquee-track">
-                <div class="partner-card"><img src="prestige.jpeg" alt="Prestige Group"></div>
-                <div class="partner-card"><img src="sumadhura.png" alt="Sumadhura"></div>
-                <div class="partner-card"><img src="brigade.jpeg" alt="Brigade Group"></div>
-                <div class="partner-card"><img src="sobha.jpeg" alt="Sobha Limited"></div>
-                <div class="partner-card"><img src="godrej.jpeg" alt="Godrej Properties"></div>
+                <div class="partner-card"><img src="prestige.jpeg" alt="Prestige"></div>
+                <div class="partner-card"><img src="sobha.jpeg" alt="Sobha"></div>
+                <div class="partner-card"><img src="brigade.jpeg" alt="Brigade"></div>
+                <div class="partner-card"><img src="godrej.jpeg" alt="Godrej"></div>
                 <div class="partner-card"><img src="Vaswani.png" alt="Vaswani"></div>
-                <div class="partner-card"><img src="embassy.jpeg" alt="Embassy Group"></div>
+                <div class="partner-card"><img src="embassy.jpeg" alt="Embassy"></div>
                 <div class="partner-card"><img src="nambiar.jpeg" alt="Nambiar"></div>
                 <div class="partner-card"><img src="l&t.jpeg" alt="L&T"></div>
                 <div class="partner-card"><img src="sowparnika.jpeg" alt="Sowparnika"></div>
-                <div class="partner-card"><img src="total_environment.jpeg" alt="Total Environment"></div>
-
-                <div class="partner-card"><img src="prestige.jpeg" alt="Prestige Group"></div>
-                <div class="partner-card"><img src="sumadhura.png" alt="Sumadhura"></div>
-                <div class="partner-card"><img src="brigade.jpeg" alt="Brigade Group"></div>
-                <div class="partner-card"><img src="sobha.jpeg" alt="Sobha Limited"></div>
-                <div class="partner-card"><img src="godrej.jpeg" alt="Godrej Properties"></div>
-                <div class="partner-card"><img src="Vaswani.png" alt="Vaswani"></div>
-                <div class="partner-card"><img src="embassy.jpeg" alt="Embassy Group"></div>
-                <div class="partner-card"><img src="nambiar.jpeg" alt="Nambiar"></div>
-                <div class="partner-card"><img src="l&t.jpeg" alt="L&T"></div>
-                <div class="partner-card"><img src="sowparnika.jpeg" alt="Sowparnika"></div>
-                <div class="partner-card"><img src="total_environment.jpeg" alt="Total Environment"></div>
+                <div class="partner-card"><img src="total_environment.jpeg" alt="Total"></div>
+                <div class="partner-card"><img src="prestige.jpeg" alt="Prestige"></div>
+                <div class="partner-card"><img src="sobha.jpeg" alt="Sobha"></div>
+                <div class="partner-card"><img src="brigade.jpeg" alt="Brigade"></div>
+                <div class="partner-card"><img src="godrej.jpeg" alt="Godrej"></div>
             </div>
         </div>
     </section>
@@ -98,27 +91,27 @@
         <h2 class="section-title">Our Leadership</h2>
         <div class="founders-grid">
             <div class="card">
-                <div class="avatar">
-                    <img src="RC.jpeg" alt="Rohit Chanda">
-                </div>
+                <div class="avatar"><img src="RC.jpeg" alt="Rohit Chanda"></div>
                 <h3>Rohit Chanda</h3>
                 <span class="role">Founder & CEO</span>
-                <p class="bio">
-                    Rohit brings over a decade of experience in Bangalore's real estate sector. Having worked with the city's top builders for several years, he gained unparalleled industry insights and built a network of trust with leading developers.
-                </p>
+                <p class="bio">Rohit brings over a decade of experience in Bangalore's real estate sector. Having worked with the city's top builders for several years, he gained unparalleled industry insights.</p>
             </div>
-
             <div class="card">
-                <div class="avatar">
-                    <img src="MV.png" alt="Murthy V">
-                </div>
+                <div class="avatar"><img src="MV.png" alt="Murthy V"></div>
                 <h3>Murthy V</h3>
                 <span class="role">Co-Founder & COO</span>
-                <p class="bio">
-                    Murthy's strategic acumen and operational excellence complement Rohit's vision perfectly. With extensive experience in client relations and project management, he ensures every client receives personalized attention.
-                </p>
+                <p class="bio">Murthy's strategic acumen and operational excellence complement Rohit's vision perfectly. With extensive experience in client relations and project management.</p>
             </div>
         </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Upcoming Projects</h2>
+        <div style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">
+            <p>Click on a project below to view full details.</p>
+        </div>
+        
+        <div class="founders-grid" id="projects-grid"></div>
     </section>
 
     <section id="contact" class="section">
@@ -126,16 +119,15 @@
         <div style="text-align: center;">
             <h3 class="section-subtitle">Ready to find your dream property? Contact us today!</h3>
         </div>
-        
         <div class="contact-form">
-            <form onsubmit="handleContact(event)">
+            <form id="contact-form" onsubmit="handleContact(event)">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="John Doe" required>
+                    <input type="text" id="name" placeholder="Ankush Tripathi" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="john@example.com" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Your Message</label>
@@ -148,7 +140,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 ONE PROMISE GROUP | All rights reserved</p>
+            <p>Copyright &copy; 2025 ONEPROMISE GROUP | All rights reserved</p>
+            
             <div class="social-links">
                 <a href="https://www.facebook.com/profile.php?id=61586057374411" target="_blank" rel="noopener noreferrer" class="social-icon">
                     <i class="fab fa-facebook-f"></i>
@@ -170,10 +163,48 @@
     </footer>
 
     <a href="https://wa.me/918618303398" class="whatsapp-float" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon">
-            <path fill="white" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon"><path fill="white" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
     </a>
+
+    <div class="feedback-float-wrapper">
+        <div class="stars-container">
+            <i class="fas fa-star" onclick="rateUs(5)"></i><i class="fas fa-star" onclick="rateUs(4)"></i><i class="fas fa-star" onclick="rateUs(3)"></i><i class="fas fa-star" onclick="rateUs(2)"></i><i class="fas fa-star" onclick="rateUs(1)"></i>
+        </div>
+        <div class="feedback-icon"><i class="fas fa-comment-dots"></i></div>
+    </div>
+
+    <div id="viewProjectModal" class="modal">
+        <div class="modal-content" style="text-align: left;">
+            <span class="close-modal" onclick="closeViewProjectModal()">&times;</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <img id="viewImg" src="" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow); object-fit: cover; height: 250px;">
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <h3 id="viewTitle" style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 0.5rem;"></h3>
+                    <span id="viewStatus" class="status-badge" style="position: relative; top: auto; right: auto; display: inline-block; margin-bottom: 1rem;"></span>
+                    <p style="margin-bottom: 0.5rem;"><strong>📍 Location:</strong> <span id="viewLocation"></span></p>
+                    <p style="margin-bottom: 1rem;"><strong>💰 Price:</strong> <span id="viewPrice" style="color: var(--gold); font-weight: bold;"></span></p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1rem 0;">
+                    <p id="viewDesc" style="line-height: 1.6; color: var(--text-color); margin-bottom: 1.5rem;"></p>
+                    <a href="#contact" onclick="closeViewProjectModal()" class="btn" style="width: 100%; text-align: center;">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeFeedbackModal()">&times;</span>
+            <h3 class="modal-title">We Value Your Feedback</h3>
+            <p id="rating-text" class="modal-subtitle"></p>
+            <div class="form-group" style="text-align: left;">
+                <label class="formal-label">Your Suggestions:</label>
+                <textarea id="feedbackText" class="formal-textarea" rows="4"></textarea>
+            </div>
+            <button class="btn" onclick="submitFeedback()" style="width: 100%;">Submit Feedback</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
