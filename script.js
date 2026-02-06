@@ -8,7 +8,6 @@ const projectsData = [
         price: "85 L onwards",
         status: "Under Construction",
         desc: "A premium high-rise residential community featuring state-of-the-art amenities and breathtaking views of the city skyline.",
-        // CHANGED: Use local filename here
         img: "ROR.jpeg" 
     },
     {
@@ -17,7 +16,6 @@ const projectsData = [
         price: "₹2 Cr onwards",
         status: "Under Construction",
         desc: "Exclusive eco-friendly luxury villas nestled in nature, offering a perfect blend of modern living and serenity.",
-        // CHANGED: Use local filename here
         img: "ATMOS.jpeg"
     },
     {
@@ -26,7 +24,6 @@ const projectsData = [
         price: "₹2.2 Cr onwards",
         status: "Under Construction",
         desc: "A next-generation commercial space designed for startups and established tech giants, featuring smart infrastructure.",
-        // CHANGED: Use local filename here
         img: "ONE_RES.jpg"
     },
     {
@@ -35,7 +32,6 @@ const projectsData = [
         price: "EOI : From 10L onwards",
         status: "Pre-launch",
         desc: "SOBHA LTD. is set to launch its latest premium residential project, East Bangalore. Spanning 300 acres, this development promises to redefine luxury living with its modern architecture, serene environment, and world-class amenities.",
-        // CHANGED: Use local filename here
         img: "Coming Soon.jpg"
     }
 ];
