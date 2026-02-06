@@ -28,6 +28,15 @@ const projectsData = [
         desc: "A next-generation commercial space designed for startups and established tech giants, featuring smart infrastructure.",
         // CHANGED: Use local filename here
         img: "ONE_RES.jpg"
+    },
+    {
+        title: "Shoba World City",
+        location: "Hoskote, Bangalore",
+        price: "EOI : From 10L onwards",
+        status: "Pre-launch",
+        desc: "SOBHA LTD. is set to launch its latest premium residential project, East Bangalore. Spanning 300 acres, this development promises to redefine luxury living with its modern architecture, serene environment, and world-class amenities.",
+        // CHANGED: Use local filename here
+        img: "Coming Soon.jpg"
     }
 ];
 
